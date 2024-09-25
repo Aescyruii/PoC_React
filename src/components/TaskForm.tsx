@@ -19,6 +19,7 @@ export default function TaskForm(): JSX.Element {
                 bottom: "25%",
                 right: "25%",
                 border: 1,
+                // = border: "1px solid black"
                 bgcolor: "white",
             }}
             >
@@ -32,6 +33,7 @@ export default function TaskForm(): JSX.Element {
                 </Typography>
                 <TextField
                     label="Name"
+                    // same with or without variant="outlined"
                     sx={{
                         position: "relative",
                         left: "25%",
@@ -42,6 +44,7 @@ export default function TaskForm(): JSX.Element {
                 />
                 <TextField
                     label="Description"
+                    variant="filled"
                     sx={{
                         position: "relative",
                         left: "25%",
@@ -52,6 +55,7 @@ export default function TaskForm(): JSX.Element {
                 />
                 <TextField
                     label="Due time"
+                    variant="standard"
                     sx={{position: "relative",
                          left: "25%",
                          width: "50%",
