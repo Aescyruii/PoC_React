@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import React from "react";
 
-export default function AddTasks({ handleClick }: {handleClick: () => void}): JSX.Element {
+export default function AddTasks({handleClick}: {handleClick: () => void}): JSX.Element {
     return (
         <Button
         onClick={handleClick}

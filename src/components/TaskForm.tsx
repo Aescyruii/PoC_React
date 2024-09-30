@@ -1,6 +1,8 @@
 import { Button, Box, TextField, Typography } from "@mui/material";
+import { useContext } from "react";
+import { TaskFormContext } from "../Context";
 
-export default function TaskForm(): JSX.Element {
+export default function TaskForm({handleClick}: {handleClick: () => void}): JSX.Element {
     return (
         <>
             <Box sx={{
@@ -63,7 +65,15 @@ export default function TaskForm(): JSX.Element {
                          marginBottom: "10px"
                     }}
                 />
-                <Button sx={{position: "absolute", left: "25%", top: "85%", width: "50%", border: 1}}>
+                <Button onClick={handleClick}
+                    sx= {{
+                        position: "absolute",
+                        left: "25%",
+                        top: "85%",
+                        width: "50%",
+                        border: 1
+                    }}
+                >
                     Submit
                 </Button>
             </Box>
